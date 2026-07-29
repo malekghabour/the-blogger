@@ -1,0 +1,2 @@
+class Psot < ApplicationRecord
+end

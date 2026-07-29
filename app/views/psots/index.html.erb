@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Psots" %>
+
+<h1>Psots</h1>
+
+<div id="psots">
+  <% @psots.each do |psot| %>
+    <%= render psot %>
+    <p>
+      <%= link_to "Show this psot", psot %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New psot", new_psot_path %>

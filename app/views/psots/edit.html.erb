@@ -1,0 +1,12 @@
+<% content_for :title, "Editing psot" %>
+
+<h1>Editing psot</h1>
+
+<%= render "form", psot: @psot %>
+
+<br>
+
+<div>
+  <%= link_to "Show this psot", @psot %> |
+  <%= link_to "Back to psots", psots_path %>
+</div>

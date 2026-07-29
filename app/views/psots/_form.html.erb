@@ -1,0 +1,17 @@
+<%= form_with(model: psot) do |form| %>
+  <% if psot.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(psot.errors.count, "error") %> prohibited this psot from being saved:</h2>
+
+      <ul>
+        <% psot.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
